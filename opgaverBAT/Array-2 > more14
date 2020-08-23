@@ -1,0 +1,15 @@
+public boolean more14(int[] nums) {
+   int antalen = 0;
+   int antalfire = 0;
+   
+  for(int i = 0; i <  nums.length; ++i){
+    if(nums[i] == 1){
+      ++antalen;
+    }
+    else if(nums[i] == 4){
+      ++antalfire;
+    }
+    
+  }
+  return antalen > antalfire;
+}
